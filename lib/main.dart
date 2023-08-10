@@ -1,19 +1,28 @@
+import 'package:catbreeds_app/views/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:catbreeds_app/repositories/catbreed_repository.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+import 'blocs/catbreed_bloc/catbreed_bloc.dart';
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+void main() => runApp(CatBreedsApp());
+
+class CatBreedsApp extends StatelessWidget {
+  final CatBreedRepository catBreedRepository = CatBreedRepository();
+
+  CatBreedsApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+    return BlocProvider(
+      create: (context) => CatBreedBloc(catBreedRepository),
+      child: MaterialApp(
+        title: 'Cat Breeds',
+        theme: ThemeData(
+          primarySwatch: Colors.deepOrange,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
+        home: const SplashScreen(),
       ),
     );
   }
