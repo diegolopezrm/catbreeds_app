@@ -2,7 +2,7 @@
 
 <img src="https://github.com/diegolopezrm/catbreeds_app/assets/63005462/6cef9ec6-87eb-4409-b6d2-1929e65da6bb"  height="400">
 <img src="https://github.com/diegolopezrm/catbreeds_app/assets/63005462/cee687ed-3868-4f3d-b10e-8efbbfc973d4"  height="400">
-<img src="https://github.com/diegolopezrm/catbreeds_app/assets/63005462/4068a3ea-5746-442a-bb66-c7fef99b6e12"  height="400">
+<img src="https://github.com/diegolopezrm/catbreeds_app/assets/63005462/5730d1e4-3d6e-4401-ba0f-2a8c5db9a307"  height="400">
 
 ## Descripción
 
